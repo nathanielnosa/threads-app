@@ -35,7 +35,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 # ABOUT THE PROJECT
 
-## Installing dependencies
+## Installing packages
 
 - npx create-next-app @latest ./
 - npm install @clerk/nextjs (for simple and roboust authentication)
@@ -43,3 +43,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - npm install uploadthing (as package itself)
 - npm install mongose
 - npm install svix (for web hooks)
+- npm install tailwindcss-animate
+- npm install @clerk/themes
