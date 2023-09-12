@@ -1,4 +1,9 @@
-import { OrganizationSwitcher, SignOutButton, SignedIn } from "@clerk/nextjs";
+import {
+  OrganizationSwitcher,
+  SignOutButton,
+  SignedIn,
+  UserButton,
+} from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
 import { dark } from "@clerk/themes";
@@ -11,7 +16,7 @@ const TopBar = () => {
         <p className="text-heading3-bold text-light-1 max-xs:hidden">Threads</p>
       </Link>
 
-      <div className="flex items-center gap-1">
+      <div className="flex items-center gap-1 border border-red-500">
         <div className="block md:hidden">
           <SignedIn>
             <SignOutButton>
@@ -27,7 +32,7 @@ const TopBar = () => {
           </SignedIn>
         </div>
 
-        <div className="border-red-300 bg-red-800">
+        <div className="border border-green-500 w-40 h-40">
           <OrganizationSwitcher
             appearance={{
               baseTheme: dark,
@@ -37,6 +42,7 @@ const TopBar = () => {
             }}
           />
         </div>
+        <UserButton afterSignOutUrl="/" />
       </div>
     </nav>
   );
