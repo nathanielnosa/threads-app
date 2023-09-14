@@ -16,7 +16,7 @@ const TopBar = () => {
         <p className="text-heading3-bold text-light-1 max-xs:hidden">Threads</p>
       </Link>
 
-      <div className="flex items-center gap-1 border border-red-500">
+      <div className="flex items-center gap-1">
         <div className="block md:hidden">
           <SignedIn>
             <SignOutButton>
@@ -32,18 +32,16 @@ const TopBar = () => {
           </SignedIn>
         </div>
 
-        <div className="border border-green-500 w-40 h-40">
-          <OrganizationSwitcher
-            appearance={{
-              baseTheme: dark,
-              elements: {
-                organizationSwitcherTrigger: "py-2 px-4 border-red-500",
-              },
-            }}
-          />
-        </div>
-        <UserButton afterSignOutUrl="/" />
+        <OrganizationSwitcher
+          appearance={{
+            baseTheme: dark,
+            elements: {
+              organizationSwitcherTrigger: "py-2 px-4",
+            },
+          }}
+        />
       </div>
+      <UserButton afterSignOutUrl="/" />
     </nav>
   );
 };
