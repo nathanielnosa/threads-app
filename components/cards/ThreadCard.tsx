@@ -110,12 +110,11 @@ const ThreadCard = ({
             </div>
           </div>
         </div>
-
         {/* delete thread */}
         {/* show comments logo */}
       </div>
       {/* community */}
-      {!isComment && community && (
+      {isComment && community && (
         <Link
           href={`/communities/${community.id}`}
           className="mt-5 flex items-center"

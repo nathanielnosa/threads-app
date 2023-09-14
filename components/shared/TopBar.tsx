@@ -41,7 +41,6 @@ const TopBar = () => {
           }}
         />
       </div>
-      <UserButton afterSignOutUrl="/" />
     </nav>
   );
 };
