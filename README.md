@@ -34,6 +34,9 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 # ABOUT THE PROJECT
+This is the link to the project demo, its a cloned thread app
+Link:
+https://threads-app-smoky.vercel.app/
 
 ## Installing packages
 
